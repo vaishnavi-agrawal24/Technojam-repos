@@ -173,3 +173,47 @@ public class Factorial {
 <br>
 <br>
 <br>
+5. write a program to reverse an array
+<br>
+<br>
+public class arrayReverse { 
+            <br>
+    static void reverse(int a[], int n) 
+            <br>
+    { 
+            <br>
+        int i, k, t; 
+            <br>
+        for (i = 0; i < n / 2; i++) { 
+            <br>
+            t = a[i]; 
+            <br>
+            a[i] = a[n - i - 1]; 
+            <br>
+            a[n - i - 1] = t; 
+            <br>
+        } 
+        <br> 
+        System.out.println("Reversed array is: \n"); 
+            <br>
+        for (k = 0; k < n; k++) { 
+                          <br>
+            System.out.println(a[k]); 
+            <br>
+        } 
+            <br>
+    } 
+    <br>
+    public static void main(String[] args){ 
+            <br>
+        int[] arr = { 10, 20, 30, 40, 50 }; 
+            <br>
+        reverse(arr, arr.length);
+            <br>
+    } 
+            <br>
+}
+<br>
+<br>
+<br>
+<br>
